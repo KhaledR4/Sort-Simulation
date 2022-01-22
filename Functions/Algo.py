@@ -2,6 +2,10 @@ from queue import PriorityQueue
 from Constants import WIDTH, HEIGHT, av_width, av_height
 
 
+def relative_pos(pos1, pos2):
+    return pos1[0]-pos2[0], pos1[1]-pos2[1]
+
+
 def distance(pos1, pos2):
     '''
     Finds the distance between two positions

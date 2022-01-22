@@ -1,21 +1,20 @@
 from Constants import av_height, av_width
 import pygame as py
 from Functions.Algo import distance
-from Defenses.cannon_bullet import Bullet
+from Defenses.Bullet_MG import Bullet_MG
+MG_photo = [py.image.load("photos/PNG_cannon/MG.png").convert_alpha()]
 
-cannons = [py.image.load("photos/PNG_cannon/Cannon.png").convert_alpha()]
 
-
-class Cannon(py.sprite.Sprite):
+class MG_defense(py.sprite.Sprite):
     def __init__(self, x, y, time):
         super().__init__()
         self.image_index = 0
-        self.image = cannons[self.image_index]
+        self.image = MG_photo[self.image_index]
         self.image = py.transform.scale(self.image, (av_width, av_height))
         self.rect = self.image.get_rect()
         self.rect.left = x
         self.rect.top = y
-        self.range = 200
+        self.range = 2000
         self.target = None
         self.time = time
         self.time_btwn_hits = 3000
@@ -36,5 +35,5 @@ class Cannon(py.sprite.Sprite):
 
     def shoot(self, group, instant):
         if (instant - self.time) > self.time_btwn_hits:
-            group.add(Bullet(self.rect.centerx, self.rect.centery, self.target))
+            group.add(Bullet_MG(self.rect.centerx, self.rect.centery, self.target))
             self.time = instant
