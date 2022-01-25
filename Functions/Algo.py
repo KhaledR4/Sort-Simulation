@@ -70,13 +70,13 @@ def get_neighbors(pos, barriers):
     if neighbor_1 not in barriers and neighbor_1[0] < WIDTH/av_width - 1:
         neighbors.append(neighbor_1)
     neighbor_2 = (pos[0] - 1, pos[1])
-    if neighbor_2 not in barriers and neighbor_2[0] > 0:
+    if neighbor_2 not in barriers and neighbor_2[0] >= 0:
         neighbors.append(neighbor_2)
     neighbor_3 = (pos[0], pos[1]+1)
     if neighbor_3 not in barriers and neighbor_3[1] < HEIGHT/av_height - 1:
         neighbors.append(neighbor_3)
     neighbor_4 = (pos[0], pos[1]-1)
-    if neighbor_4 not in barriers and neighbor_4[1] > 0:
+    if neighbor_4 not in barriers and neighbor_4[1] >= 0:
         neighbors.append(neighbor_4)
     return neighbors
 

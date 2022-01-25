@@ -41,3 +41,9 @@ character_surf_down = [py.image.load("photos/Hero/Walk_down/walk1.png").convert_
                        py.image.load("photos/Hero/Walk_down/walk7.png").convert_alpha(),
                        py.image.load("photos/Hero/Walk_down/walk8.png").convert_alpha(),
                        py.image.load("photos/Hero/Walk_down/walk9.png").convert_alpha(), ]
+
+character_died = [py.image.load("photos/Hero/Die/die1.png").convert_alpha(),
+                  py.image.load("photos/Hero/Die/die2.png").convert_alpha(),
+                  py.image.load("photos/Hero/Die/die3.png").convert_alpha(),
+                  py.image.load("photos/Hero/Die/die4.png").convert_alpha(),
+                  py.image.load("photos/Hero/Die/die5.png").convert_alpha()]
