@@ -41,5 +41,10 @@ After successfully adding a new algorithm don't forget to add its legend in Draw
 
 ## Demo
 
-If here just to view the implemented algorithms:
+A peak on two of the implemented algorithms:
+
+<div>
+<img src="https://user-images.githubusercontent.com/94381448/218177429-92dec52b-9861-427d-b8ee-e11ae41ed14a.png" height=500></img>
+<img src="https://user-images.githubusercontent.com/94381448/218177886-f7c059b5-bdcd-40e1-b8ae-eb6a816c1181.png" height=500></img>
+</div>
 
