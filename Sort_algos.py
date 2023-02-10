@@ -4,6 +4,9 @@ import time
 from Drawings.drawings import *
 
 
+def none():
+    return None
+
 def basic_sort(to_sort):
     DrawLegends.basic_sort()
 
