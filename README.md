@@ -1,6 +1,6 @@
-# Sort and Search Simulation
+# Sort Simulation
 
-This repository aims to simulate many search and sort algorithms to better understand how they work, their differences, and best use cases using python [pygame](https://www.pygame.org/docs/) module
+This repository aims to simulate many sort algorithms to better understand how they work, their differences, and best use cases using python [pygame](https://www.pygame.org/docs/) module
 
 The covered sort algorithms are:
   - Selection Sort
@@ -10,8 +10,6 @@ The covered sort algorithms are:
   - Counting Sort
   - Bucket Sort
   - Merge Sort
- 
- Searching algorithms are yet to be implemented (Search list is empty for now)
  
  
 ## Setup
